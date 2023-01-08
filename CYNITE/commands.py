@@ -22,10 +22,15 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                  ],[
-                    InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/CyniteBackup'),
-                    InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/CyniteSupport')
+                    InlineKeyboardButton('× ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    ], [
+                        InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 1', url='https://t.me/+ps2An00KwZYwNTRl'),
+                        InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 2', url='https://t.me/+pl4rB-xx8ltlOTE1')
+                    ], [
+                        InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+                        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+                    ],[
+                        InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/TeamHMT_Bots')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         kd = await message.reply_photo(
@@ -45,12 +50,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                  ],[
-                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
-                  ],[
-                    InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ', url="https://youtube.com/@TechnicalCynite")
+                    InlineKeyboardButton('× ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    ], [
+                        InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 1', url='https://t.me/+ps2An00KwZYwNTRl'),
+                        InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 2', url='https://t.me/+pl4rB-xx8ltlOTE1')
+                    ], [
+                        InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+                        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+                    ],[
+                        InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/TeamHMT_Bots')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -83,7 +91,7 @@ async def start(client, message):
             except (IndexError, ValueError):
                 btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_photo(
-            photo="https://telegra.ph/file/a4c2c5d8a999b47970227.jpg",
+            photo="https://telegra.ph/file/14d8ebc6d4a7782307d2f.jpg",
             chat_id=message.from_user.id,
             caption=(script.FORCE_SUB),
             reply_markup=InlineKeyboardMarkup(btn),
@@ -92,12 +100,15 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                  ],[
-                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
-                  ],[
-                    InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ', url="https://youtube.com/@TechnicalCynite")
+                    InlineKeyboardButton('× ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    ], [
+                        InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 1', url='https://t.me/+ps2An00KwZYwNTRl'),
+                        InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 2', url='https://t.me/+pl4rB-xx8ltlOTE1')
+                    ], [
+                        InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+                        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+                    ],[
+                        InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/TeamHMT_Bots')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
