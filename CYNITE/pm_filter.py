@@ -515,12 +515,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                  ],[
-                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
-                  ],[
-                    InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ', url="https://youtube.com/@TechnicalCynite")
+                    InlineKeyboardButton('× ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    ], [
+                        InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 1', url='https://t.me/+ps2An00KwZYwNTRl'),
+                        InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 2', url='https://t.me/+pl4rB-xx8ltlOTE1')
+                    ], [
+                        InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+                        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+                     ],[
+                        InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/TeamHMT_Bots')
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -553,9 +556,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʙᴜɢs & ꜰᴇᴇᴅʙᴀᴄᴋ', url=GRP_LNK)
-        ],[
-            InlineKeyboardButton('ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ', url="https://t.me/cynitebackup")
+            InlineKeyboardButton('Mᴏᴠɪᴇ ᴄʜᴀɴɴᴇʟ', url="https://t.me/TeamHMT")
         ],[
             InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close_data')
@@ -1180,8 +1181,8 @@ async def advantage_spell_chok(msg):
             callback_data="splmd"
         ),
         InlineKeyboardButton(
-            text="ʀᴇᴘᴏʀᴛ ʜᴇʀᴇ",
-            url=f"t.me/{SUPPORT_CHAT}"
+            text="Rᴇᴏ̨ᴜᴇsᴛ ʜᴇʀᴇ",
+            url='https://t.me/movieadder_bot'
         )
     ],[
         InlineKeyboardButton(
