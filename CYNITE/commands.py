@@ -30,7 +30,7 @@ async def start(client, message):
                         InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                     ],[
-                        InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/TeamHMT_Bots')
+                        InlineKeyboardButton('Hᴏᴡ Tᴏ Oᴘᴇɴ Lɪɴᴋ? 🤔', url='https://t.me/Team_HMT/8')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         kd = await message.reply_photo(
@@ -58,7 +58,7 @@ async def start(client, message):
                         InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                     ],[
-                        InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/TeamHMT_Bots')
+                        InlineKeyboardButton('Hᴏᴡ Tᴏ Oᴘᴇɴ Lɪɴᴋ? 🤔', url='https://t.me/Team_HMT/8')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -108,7 +108,7 @@ async def start(client, message):
                         InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                     ],[
-                        InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/TeamHMT_Bots')
+                        InlineKeyboardButton('Hᴏᴡ Tᴏ Oᴘᴇɴ Lɪɴᴋ? 🤔', url='https://t.me/Team_HMT/8')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
