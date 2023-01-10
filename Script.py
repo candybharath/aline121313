@@ -1,9 +1,7 @@
 class script(object):
-    START_TXT = """ʜᴇʟʟᴏ {} 👋
+    START_TXT = """<b>Hello {} 👋  I am Search Bot, I can share Movies and Series 😁</b>.
 
-ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ᴀɴᴅ sᴇʀɪᴇs,
-ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ.
-ɪ ᴡᴏʀᴋ ᴏɴ ʙᴏᴛʜ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘᴍ."""
+<b>Add Me To Your Group (or) Just Type the Movie Name Here 👇</b>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
 
