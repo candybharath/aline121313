@@ -87,6 +87,10 @@
             "description": "Your Heroku API Key to check dyno, bot uptime and bot working day prediction",
             "required": true
         }
+        "DELETE_CHANNELS": {
+             "description": "Delete Multiple files from db, channel id -100xxxxxxxx.",
+             "required": true
+        }
     },
     "addons": [],
     "buildpacks": [{
