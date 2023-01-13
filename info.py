@@ -51,6 +51,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+C6576uw1AE8yMzRl')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us 💖')
 
 # Custom Chats
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001537005802))
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001848626541))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+qceSo9SsrlJhMTQ1')
