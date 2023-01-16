@@ -116,10 +116,6 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
 <b>⏳ ʙᴏᴛ ᴜᴘᴛɪᴍᴇ:</b> <code>{}</code>
 
-<b>☣️ ᴄᴘᴜ:</b> <code>{}%</code>
-
-<b>☢️ ʀᴀᴍ:</b> <code>{}%</code>
-
 <b>📊 ғɪʟᴇs sᴀᴠᴇᴅ:</b> <code>{}</code>
 
 <b>👤 ᴜsᴇʀs:</b> <code>{}</code>
