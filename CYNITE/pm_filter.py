@@ -1090,7 +1090,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply(script.I_CUDNT.format(reqstr.mention))
+        k = await msg.reply(I_CUDNT)
         await asyncio.sleep(SPL_DELETE_TIME)
         await k.delete()
         return
@@ -1119,7 +1119,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply(script.I_CUD_NT.format(reqstr.mention))
+        k = await msg.reply(I_CUD_NT)
         await asyncio.sleep(8)
         await k.delete()
         return
