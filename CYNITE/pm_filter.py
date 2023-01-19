@@ -1134,10 +1134,10 @@ async def advantage_spell_chok(msg):
     await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",	
                     reply_markup=InlineKeyboardMarkup(btn))
 
-    #try:
-        #if settings['auto_delete']:
-         #   await asyncio.sleep(SPL_DELETE_TIME)
-          #  await spell_check_del.delete()
+    try:
+        if settings['auto_delete']:
+           await asyncio.sleep(SPL_DELETE_TIME)
+           await spell_check_del.delete()
     #except KeyError:
      #       grpid = await active_connection(str(message.from_user.id))
       #      await save_group_settings(grpid, 'auto_delete', True)
