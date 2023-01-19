@@ -1138,13 +1138,13 @@ async def advantage_spell_chok(msg):
         if settings['auto_delete']:
            await asyncio.sleep(SPL_DELETE_TIME)
            await spell_check_del.delete()
-    #except KeyError:
-     #       grpid = await active_connection(str(message.from_user.id))
-      #      await save_group_settings(grpid, 'auto_delete', True)
-       #     settings = await get_settings(message.chat.id)
-        #    if settings['auto_delete']:
-         #       await asyncio.sleep(SPL_DELETE_TIME)
-          #      await spell_check_del.delete()
+    except KeyError:
+            grpid = await active_connection(str(message.from_user.id))
+            await save_group_settings(grpid, 'auto_delete', True)
+            settings = await get_settings(message.chat.id)
+            if settings['auto_delete']:
+                await asyncio.sleep(SPL_DELETE_TIME)
+                await spell_check_del.delete()
                 
                 
 async def manual_filters(client, message, text=False):
