@@ -1136,7 +1136,7 @@ async def advantage_spell_chok(msg):
         caption="𝑯𝑬𝑳𝑳𝑶 {} 𝑰 𝑪𝑶𝑼𝑳𝑫𝑵'𝑻 𝑭𝑰𝑵𝑫 𝑨𝑵𝒀𝑻𝑯𝑰𝑵𝑮 𝑹𝑬𝑳𝑨𝑻𝑬𝑫 𝑻𝑶 𝑻𝑯𝑨𝑻 𝑫𝑰𝑫 𝒀𝑶𝑼 𝑴𝑬𝑨𝑵 𝑨𝑵𝒀 𝑶𝑵𝑬 𝑶𝑭 𝑻𝑯𝑬𝑺𝑬?",
         reply_markup=InlineKeyboardMarkup(btn)
         )
-
+    settings = await get_settings(message.chat.id)
     try:
         if settings['auto_delete']:
            await asyncio.sleep(SPL_DELETE_TIME)
