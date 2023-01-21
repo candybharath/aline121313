@@ -1091,19 +1091,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        #k = await msg.reply("ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ.\nᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ...")
-        #k.append(
-         #   [
-          #      InlineKeyboardButton(text="Click Here To Check Spelling ✅", url=f'http://www.google.com/search?q={msg.text}%20movie')
-           # ]
-        #)
-        button = [
-            InlineKeyboardButton(text="Click Here To Check Spelling ✅", url=f'http://www.google.com/search?q={msg.text}%20movie')
-        ]
-        k = await msg.reply_cached_media(
-            caption="ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ.\nᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ...",
-            reply_markup=InlineKeyboardMarkup(button),
-        )
+        k = await msg.reply("ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ.\nᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ...")
         await asyncio.sleep(SPL_DELETE_TIME)
         await k.delete()
         return
@@ -1132,19 +1120,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        #k = await msg.reply("ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ.\nᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ...")
-        #k.append(
-         #   [
-          #      InlineKeyboardButton(text="Click Here To Check Spelling ✅", url=f'http://www.google.com/search?q={msg.text}%20movie')
-           # ]
-        #)
-        button = [
-            InlineKeyboardButton(text="Click Here To Check Spelling ✅", url=f'http://www.google.com/search?q={msg.text}%20movie')
-        ]
-        k = await msg.reply_cached_media(
-            caption="ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ.\nᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ...",
-            reply_markup=InlineKeyboardMarkup(button),
-        )
+        k = await msg.reply("ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ.\nᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ...")
         await asyncio.sleep(8)
         await k.delete()
         return
