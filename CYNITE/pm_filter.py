@@ -1100,7 +1100,7 @@ async def advantage_spell_chok(msg):
         btn = [[
             InlineKeyboardButton(text="Click Here To Check Spelling ✅", url=f'http://www.google.com/search?q={msg.text}%20movie')
         ]
-        k = await message.reply_cached_media(
+        k = await msg.reply_cached_media(
             caption="ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ.\nᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ...",
             reply_markup=InlineKeyboardMarkup(button),
         )
@@ -1141,7 +1141,7 @@ async def advantage_spell_chok(msg):
         btn = [[
             InlineKeyboardButton(text="Click Here To Check Spelling ✅", url=f'http://www.google.com/search?q={msg.text}%20movie')
         ]
-        k = await message.reply_cached_media(
+        k = await msg.reply_cached_media(
             caption="ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ.\nᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ...",
             reply_markup=InlineKeyboardMarkup(button),
         )
