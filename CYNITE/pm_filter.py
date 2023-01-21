@@ -1094,7 +1094,7 @@ async def advantage_spell_chok(msg):
         k = await msg.reply("ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ.\nᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ...")
         k.append(
             [
-            InlineKeyboardButton(text="Click Here To Check Spelling ✅", url='http://www.google.com/search?q={msg.text}%20movie')
+            InlineKeyboardButton(text="Click Here To Check Spelling ✅", url=f'http://www.google.com/search?q={msg.text}%20movie')
             ]
         )
         await asyncio.sleep(SPL_DELETE_TIME)
