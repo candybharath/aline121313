@@ -56,7 +56,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001537005802))
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001848626541))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+qceSo9SsrlJhMTQ1')
-HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/Team_HMT/8')
+HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/Team_HMT/13')
 
 # Log Channels
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ))
